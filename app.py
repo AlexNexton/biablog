@@ -15,9 +15,15 @@ app.config["MONGO_URI"] = os.environ.get("MONGO_URI")
 app.config["SECRET_KEY"] = os.environ.get("SECRET_KEY")
 
 
+mongo = PyMongo(app)
+
+
 @app.route("/")
-def hello():
-    return "Hello Cian kid!!"
+@app.route("/get_tasks")
+def get_tasks():
+    recipe =mongo.db.recipe.find()
+    return render_template("tasks.html", recipe=recipe)
+
 
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bias</title>
+</head>
+<body>
+
+    {% for recipes in recipe %}
+        
+        {{ recipes.category_name }} <br>
+        {{ recipes.recipe_name }} <br>
+        {{ recipes.recipe_ingredients }} <br>
+        {{ recipes.recipe_method }} <br>
+        {{ recipes.image_url }} <br>
+    {% endfor %}
+    
+</body>
+</html>
