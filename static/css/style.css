@@ -6,3 +6,11 @@
 .flashes h4 {
     line-height: 2;
 }
+
+.btn, .btn-large, .btn-small{
+        background-color: purple;
+}
+.btn:hover, .btn-large:hover, .btn-small:hover{
+        background-color: rgb(161, 150, 161);
+}
+
