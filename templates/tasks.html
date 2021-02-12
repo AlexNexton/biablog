@@ -2,15 +2,15 @@
 {% block content %}
    
 
-    <h3 class="text-darken-4 purple-text lighten-1 text-darken-1 center-align text-shadow">Add Recipe</h3>
-      <ul class="collapsible">
+    <h3 class="text-darken-4 purple-text lighten-1 text-darken-1 center-align text-shadow">Recipes</h3>
+      <ul class="collapsible popout">
         {% for recipes in recipe %}
         <li>
             <div class="collapsible-header white-text text-shadow purple darken-3">
                 <i class="fas fa-caret-down"></i>
                 <strong>{{ recipes.category_name }}</strong> : {{ recipes.recipe_name }}
             </div>
-            <div class="collapsible-body">
+            <div class="collapsible-body ">
                 <strong>{{ recipes.category_name }}</strong>
                 <p>Name: {{ recipes.recipe_name }}</p>
                 <p>Ingredients: {{ recipes.recipe_ingredients }}</p>

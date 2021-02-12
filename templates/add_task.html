@@ -6,7 +6,7 @@
         <form class="col s12" method="POST" action="{{ url_for('add_task') }}">
             <div class="row">
                 <div class="input-field col s12">
-                    <i class="fas fa-folder-open prefix light-blue-text text-darken-4"></i>
+                    <i class="fas fa-folder-open prefix white-text  text-darken-4"></i>
                     <select id="category_name" name="category_name" class="validate">
                         <option value="" disabled selected>Choose Category</option>
                         {% for category in categories %}
@@ -19,7 +19,7 @@
             <!--recipe name-->
             <div class="row">
                 <div class="input-field col s12">
-                    <i class="fas fa-pencil-alt prefix light-blue-text text-darken-4"></i>
+                    <i class="fas fa-pencil-alt prefix white-text  text-darken-4"></i>
                     <input id="recipe_name" name="recipe_name" type="text"
                      minlength="5" maxlength="50" class="validate" required>
                     <label for="recipe_name">Recipe Name</label>
@@ -28,7 +28,7 @@
             <!--recipe ingredients-->
              <div class="row">
                 <div class="input-field col s12">
-                    <i class="fas fa-align-left prefix light-blue-text text-darken-4"></i>
+                    <i class="fas fa-align-left prefix white-text  text-darken-4"></i>
                     <textarea id="recipe_ingredients" name="recipe_ingredients" minlength="5"
                      maxlength="200" class="materialize-textarea validate" required></textarea>
                     <label for="recipe_ingredients">Ingredients</label>
@@ -37,7 +37,7 @@
             <!--recipe method-->
              <div class="row">
                 <div class="input-field col s12">
-                    <i class="fas  fa-calendar-alt prefix light-blue-text text-darken-4"></i>
+                    <i class="fas  fa-calendar-alt prefix white-text  text-darken-4"></i>
                     <input id="recipe_method" name="recipe_method" type="text"
                      class="validate" required>
                     <label for="recipe_method">Recipe Method</label>
@@ -46,7 +46,7 @@
             <!--image url-->
             <div class="row">
                 <div class="input-field col s12">
-                    <i class="fas  fa-image prefix light-blue-text text-darken-4"></i>
+                    <i class="fas  fa-image prefix white-text text-darken-4"></i>
                     <input id="image_url" name="image_url" type="text"
                      class=" validate" required>
                     <label for="image_url">Image Url eg https:www.</label>
@@ -55,7 +55,7 @@
             <!--submitt btn-->
             <div class="row">
                 <div class="col s12 center-align">
-                    <button type="submit" class="btn-large light-blue text-shadow darken-1">
+                    <button type="submit" class="btn waves-effect waves-yellow text-shadow darken-1">
                         Submitt<i class="fas fa-plus-square right"></i>
                     </button>
                 </div>
