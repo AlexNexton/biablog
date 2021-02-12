@@ -107,9 +107,9 @@ def add_task():
         recipe = {
             "category_name": request.form.get("category_name"),
             "recipe_name": request.form.get("recipe_name"),
-            "recipe_ingredientes": request.form.get("recipe_ingredientes"),
-            "image_url":request.form.get("image_url"),
-            "due_date": request.form.get("due_date"),
+            "recipe_ingredients": request.form.get("recipe_ingredients"),
+            "recipe_method": request.form.get("recipe_method"),
+            "image_url": request.form.get("image_url"),
             "created_by": session["user"]
         }
         mongo.db.recipe.insert_one(recipe)
