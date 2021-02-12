@@ -20,10 +20,11 @@
             <a href="{{ url_for('get_tasks') }}" class="brand-logo">BiaBook</a>
             <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="fas fa-bars"></i></a>
             <ul class="right hide-on-med-and-down">
-                <li><a href="{{ url_for('get_tasks') }}">Home</a></li>
+                <li><a href="{{ url_for('index') }}">Home</a></li>
+                <li><a href="{{ url_for('get_tasks') }}">Recipes</a></li>
                 {% if session.user %}
                     <li><a href="{{ url_for('profile', username=session['user']) }}">Profile</a></li>
-                    <li><a href="{{ url_for('add_task') }}">New Task</a></li>
+                    <li><a href="{{ url_for('add_task') }}">Add Recipe</a></li>
                     <li><a href="#">Manage Categories</a></li>
                     <li><a href="{{ url_for('logout') }}">Log out</a></li>
                 {% else %}
@@ -35,11 +36,12 @@
     </nav>
     <!--mobile side nav-->
     <ul class="sidenav" id="mobile-demo">
-                <li><h4 class="center-align light-blue-text text-darken-4">Task Manager</h4></li>
-                <li><a href="{{ url_for('get_tasks') }}">Home</a></li>
+                <li><h4 class="center-align light-blue-text text-darken-4">BiaBook</h4></li>
+                <li><a href="{{ url_for('index') }}">Home</a></li>
+                <li><a href="{{ url_for('get_tasks') }}">Recipes</a></li>
                  {% if session.user %}
                     <li><a href="{{ url_for('profile', username=session['user']) }}">Profile</a></li>
-                    <li><a href="{{ url_for('add_task') }}">New Task</a></li>
+                    <li><a href="{{ url_for('add_task') }}">Add Recipe</a></li>
                     <li><a href="#">Manage Categories</a></li>
                     <li><a href="{{ url_for('logout') }}">Log out</a></li>
                 {% else %}

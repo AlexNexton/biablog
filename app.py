@@ -26,6 +26,11 @@ def get_tasks():
     recipe =mongo.db.recipe.find()
     return render_template("tasks.html", recipe=recipe)
 
+@app.route("/index")
+def index():
+     recipe =mongo.db.recipe.find()
+     return render_template("index.html", recipe=recipe)
+
 
 @app.route("/register", methods=["GET", "POST"])
 def register():
