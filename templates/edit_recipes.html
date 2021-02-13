@@ -9,9 +9,13 @@
                 <div class="input-field col s12">
                     <i class="fas fa-folder-open prefix white-text  text-darken-4"></i>
                     <select id="category_name" name="category_name" class="validate" required>
-                        <option value="" disabled selected>Choose Category</option>
+                        <option value="" disabled >Choose Category</option>
                         {% for category in categories %}
+                        {% if category.category_name == recipes.caregory_name %}
+                         <option value="{{category.category_name}}" selected>{{category.category_name}}</option>
+                        {% else %}
                          <option value="{{category.category_name}}">{{category.category_name}}</option>
+                         {% endif %}
                         {% endfor %}
                     </select>
                     <label for="category_name">Recipe Category</label>
@@ -22,7 +26,7 @@
                 <div class="input-field col s12">
                     <i class="fas fa-bread-slice  prefix white-text  text-darken-4"></i>
                     <input id="recipe_name" name="recipe_name" type="text"
-                     minlength="5" maxlength="50" class="validate" required>
+                     minlength="5" maxlength="50" value="{{ recipes.recipe_name }}" class="validate" required>
                     <label for="recipe_name">Recipe Name</label>
                 </div>
             </div>
@@ -31,7 +35,9 @@
                 <div class="input-field col s12">
                     <i class="fas fa-egg prefix white-text  text-darken-4"></i>
                     <textarea id="recipe_ingredients" name="recipe_ingredients" minlength="5"
-                     maxlength="200" class="materialize-textarea validate" required></textarea>
+                      maxlength="200" class="materialize-textarea validate" required>
+                      {{- recipes.recipe_ingredients -}}
+                    </textarea>
                     <label for="recipe_ingredients">Ingredients</label>
                 </div>
             </div>
@@ -39,7 +45,7 @@
              <div class="row">
                 <div class="input-field col s12">
                     <i class="fas  fa-pencil-alt prefix white-text  text-darken-4"></i>
-                    <input id="recipe_method" name="recipe_method" type="text"
+                    <input id="recipe_method" name="recipe_method" type="text" value="{{ recipes.recipe_method }}"
                      class="validate" required>
                     <label for="recipe_method">Recipe Method</label>
                 </div>
@@ -48,7 +54,7 @@
             <div class="row">
                 <div class="input-field col s12">
                     <i class="fas  fa-image prefix white-text text-darken-4"></i>
-                    <input id="image_url" name="image_url" type="text"
+                    <input id="image_url" name="image_url" type="text" value="{{ recipes.image_url}}"
                      class=" validate" required>
                     <label for="image_url">Image Url eg https:www.</label>
                 </div>
@@ -56,6 +62,10 @@
             <!--submitt btn-->
             <div class="row">
                 <div class="col s12 center-align">
+                    <!--cancel button-->
+                    <a href="{{ url_for('get_recipes') }}" class="btn red text-shadow">Cancel
+                        <i class="fas fa-times-circle right"></i>
+                    </a>
                     <button type="submit" class="btn waves-effect waves-yellow text-shadow darken-1">
                         Edit Recipe<i class="fas fa-edit right"></i>
                     </button>
