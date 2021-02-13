@@ -11,12 +11,10 @@ body{
    
 }
 
-.main-page{
-     background-image: url("/static/css/img/register-img.jpg") ;
-    background-size: cover;
-  height: 0, auto;
-  width: 0, auto;
+.welcome-txt{
+    font-size: 20px;
 }
+
 .the-way{
     background-image: url("/static/css/img/homepage.jpg") ;
     background-size: cover;
