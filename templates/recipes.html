@@ -10,7 +10,7 @@
                 <i class="fas fa-caret-down"></i>
                 <div class="col s3">
                     <a href="" class="waves-effect waves-light green btn-small">Done</a>
-                    <a href="" class="waves-effect waves-light btn-small">Edit</a>
+                    <a href="{{url_for('edit_recipes', recipes_id=recipes._id)}}" class="waves-effect waves-light btn-small">Edit</a>
                 </div>
                 <div class="col s9">
                 <strong>{{ recipes.category_name }}</strong> : {{ recipes.recipe_name }}
