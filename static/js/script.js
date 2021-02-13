@@ -2,6 +2,7 @@ $(document).ready(function(){
     $('.sidenav').sidenav({edge:"right"});
     $('.collapsible').collapsible();
     $('.tooltipped').tooltip();
+    $('.modal').modal();
     $('select').formSelect();
 
     //Code supplied by Code Institute in the 'Backend Development Mini Project'
