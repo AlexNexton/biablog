@@ -21,7 +21,7 @@ $(document).ready(function(){
                 }
             });
         }).on("click", function () {
-            if ($(this).parent(".select-wrapper").children("ul").children("li.selected:not(.disabled)").css("background-color") === "rgba(0, 0, 0, 0.03)") {
+            if ($(this).parent(".select-wrapper").children("ul").children("li.selected:not(.disabled)")) {
                 $(this).parent(".select-wrapper").children("input").css(classValid);
             } else {
                 $(".select-wrapper input.select-dropdown").on("focusout", function () {
