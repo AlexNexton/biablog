@@ -21,10 +21,10 @@ mongo = PyMongo(app)
 
 
 @app.route("/")
-@app.route("/get_tasks")
-def get_tasks():
+@app.route("/get_recipes")
+def get_recipes():
     recipe =mongo.db.recipe.find()
-    return render_template("tasks.html", recipe=recipe)
+    return render_template("recipes.html", recipe=recipe)
 
 @app.route("/index")
 def index():
@@ -106,8 +106,8 @@ def logout():
 
 
 
-@app.route("/add_task", methods=["GET","POST"])
-def add_task():
+@app.route("/add_recipes", methods=["GET","POST"])
+def add_recipes():
     if request.method == "POST":
         recipe = {
             "category_name": request.form.get("category_name"),
@@ -119,10 +119,11 @@ def add_task():
         }
         mongo.db.recipe.insert_one(recipe)
         flash("Task Successfully Added")
-        return redirect(url_for("get_tasks"))
+        return redirect(url_for("get_recipes"))
 
     categories = mongo.db.categories.find().sort("category_name", 1)
-    return render_template("add_task.html", categories=categories)
+    return render_template("add_recipes.html", categories=categories)
+
 
 
 if __name__ == "__main__":
