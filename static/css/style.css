@@ -10,8 +10,34 @@ body{
    min-height: 100vh;
    
 }
+
+.main-page{
+     background-image: url("/static/css/img/register-img.jpg") ;
+    background-size: cover;
+  height: 0, auto;
+  width: 0, auto;
+}
 .the-way{
     background-image: url("/static/css/img/homepage.jpg") ;
+    background-size: cover;
+  height: 100vh;
+}
+
+.the-way-login{
+background-image: url("/static/css/img/wine-pour.jpg") ;
+    background-size: cover;
+  height: 100vh;
+}
+
+.the-way-register{
+    background-image: url("/static/css/img/register-img.jpg") ;
+    background-size: cover;
+  height: 100vh;
+
+}
+
+.the-way-recipes{
+     background-image: url("/static/css/img/register-img.jpg") ;
     background-size: cover;
   height: 100vh;
 }
@@ -59,6 +85,10 @@ h2{
 .card{
     margin-top: 20%;
     
+}
+
+.card-panel{ /* edits the register and login cards*/
+    margin: 6.5rem;
 }
 .card .card-image .card-title {
     color: red;

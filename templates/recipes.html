@@ -2,13 +2,14 @@
 {% block content %}
    <!--This page and it's code was/were influenced by the 'Backend Development Mini Project' by Code Institue-->
 
-    <h3 class="text-darken-4 purple-text lighten-1 text-darken-1 center-align text-shadow">Recipes</h3>
-      <ul class="collapsible popout">
+    <h3 class="text-darken-4 purple-text lighten-1 text-darken-1 center-align text-shadow ">Recipes</h3>
+    
+      <ul class="collapsible popout  ">
         {% for recipes in recipe %}
-        <li>
-            <div class="collapsible-header white-text text-shadow purple darken-3">
+        <li >
+            <div class="collapsible-header white-text text-shadow purple darken-3 ">
                 <i class="fas fa-utensils"></i>
-                <div class="col s3">
+                <div class="col s3  ">
                     {% if session.user|lower == recipes.created_by|lower %}
                         <!-- Modal Trigger for delete button -->
                         <a class="waves-effect waves-light btn red modal-trigger" href="#modal1">Delete</a>
@@ -27,12 +28,12 @@
                         <a href="{{url_for('edit_recipes', recipes_id=recipes._id)}}" class="waves-effect waves-light green btn-small">Edit</a>
                     {% endif %}
                 </div>
-                <div class="col s9">
+                <div class="col s9 ">
                 <strong class="outside-title">{{ recipes.category_name }}</strong> : {{ recipes.recipe_name }}
                 <p>click here to see recipes</p>
                 </div></div>
             
-                <div class="collapsible-body recipe-font m3 ">
+                <div class="collapsible-body recipe-font m3 card-panel ">
                     <strong><span id="title-name">{{ recipes.category_name }}</span></strong>
                     <p><span class="title-name">Name:</span> {{ recipes.recipe_name }}</p>
                     <p><span class="title-name">Ingredients:</span> {{ recipes.recipe_ingredients }}</p>
