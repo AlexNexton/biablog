@@ -1,11 +1,11 @@
 /*<!--This page and it's code was/were influenced by the 'Backend Development Mini Project' by Code Institue-->*/
 /*@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Kalam&family=Libre+Baskerville&display=swap');*/
-@import url('https://fonts.googleapis.com/css2?family=Reggae+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Reggae+One&family=Vollkorn+SC&display=swap');
 
 
 
 body{
-   font-family: 'Reggae One', serif; 
+   font-family: 'Vollkorn SC', serif; 
    background-image: linear-gradient(#f0ede5, #7c0999);
    color: navy;
    min-height: 100vh;
@@ -68,7 +68,31 @@ h2{
     line-height: 42px;
 }
 
+#title-name{
+    color: green;
+    font-size:40px ;
+    text-shadow: 2px 2px 2px rgba(10, 195, 72, 0.5);
+}
+
+.title-name{
+    color: green;
+    font-size: 15px;
+     text-shadow: 2px 2px 2px rgba(10, 195, 72, 0.5);
+}
+
+.outside-title{
+    color: #fac600;
+    font-size: 20px;
+}
+
+.recipe-font{
+    color: rgb(184, 65, 158);
+    margin: 0 auto;
+    padding: 10px;
+}
+
 .recipe-img{
+    margin: 20px;
     width: 30%;
     height: 20%;
 }
