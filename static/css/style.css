@@ -6,10 +6,12 @@
 
 body{
    font-family: 'Vollkorn SC', serif; 
-   background-image: linear-gradient(#f0ede5, #7c0999);
-   color: navy;
+   background-image: linear-gradient(#f0ede5, #7c0999); 
    min-height: 100vh;
+   
 }
+
+
 
 h2{
     font-weight: 500;
@@ -86,7 +88,7 @@ h2{
 }
 
 .recipe-font{
-    color: rgb(184, 65, 158);
+    color: #3f1d40;
     margin: 0 auto;
     padding: 10px;
 }
@@ -106,7 +108,7 @@ h2{
 }
 
 .input-field .helper-text{
-    color: white;
+    color: #fac600;
 }
 
 .page-footer {
