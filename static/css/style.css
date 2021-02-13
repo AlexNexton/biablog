@@ -1,4 +1,41 @@
 /*<!--This page and it's code was/were influenced by the 'Backend Development Mini Project' by Code Institue-->*/
+/*@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Kalam&family=Libre+Baskerville&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Reggae+One&display=swap');
+
+
+
+body{
+   font-family: 'Reggae One', serif; 
+   background-image: linear-gradient(#f0ede5, #7c0999);
+   color: navy;
+   min-height: 100vh;
+}
+
+h2{
+    font-weight: 500;
+}
+.over-flow{
+    overflow: hidden;
+}
+
+.nav-link{
+    border-radius: 20%;
+}
+.nav-link:hover{
+    border-radius: 50%;
+    background: rgb(204, 17, 195);
+    color: #fafafa;
+}
+
+.brand-logo{
+   border: 100%;
+}
+
+.brand-logo:hover{
+    border: 100%;
+    background: rgb(204, 17, 195);
+    color: #fafafa;
+}
 
 .text-shadow{
     text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
@@ -42,4 +79,23 @@
     color: purple;
 }
 
+.page-footer {
+    background-color: #401e4b;
+}
 
+.social-links {
+    margin-top: 20px;
+}
+.fab {
+    background-color:#401e4b; 
+    height: 50px;
+    width: 50px;
+    color: #cca90f;
+    font-size: 30px;
+    padding: 5px;
+    
+}
+.fab:hover {
+  
+  font-size: 40px;
+}
