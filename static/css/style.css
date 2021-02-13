@@ -10,7 +10,11 @@ body{
    min-height: 100vh;
    
 }
-
+.the-way{
+    background-image: url("/static/css/img/homepage.jpg") ;
+    background-size: cover;
+  height: 100vh;
+}
 
 
 h2{
