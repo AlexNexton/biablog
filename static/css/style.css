@@ -16,6 +16,14 @@
         background-color: rgb(161, 150, 161);
 }
 
+.card{
+    margin-top: 20%;
+    
+}
+.card .card-image .card-title {
+    color: red;
+}
+
 .btn-small{
     margin: 5px
     
