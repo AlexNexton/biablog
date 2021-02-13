@@ -1,3 +1,4 @@
+//This page and it's code was/were influenced by the 'Backend Development Mini Project' by Code Institue
 $(document).ready(function(){
     $('.sidenav').sidenav({edge:"right"});
     $('.collapsible').collapsible();
