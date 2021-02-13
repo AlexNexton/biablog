@@ -32,6 +32,7 @@
                     <textarea id="recipe_ingredients" name="recipe_ingredients" minlength="5"
                      maxlength="200" class="materialize-textarea validate" required></textarea>
                     <label for="recipe_ingredients">Ingredients</label>
+                    <span class="helper-text">Please seperate each Ingredient with a comma</span>
                 </div>
             </div>
             <!--recipe method-->
@@ -41,15 +42,18 @@
                     <input id="recipe_method" name="recipe_method" type="text"
                      class="validate" required>
                     <label for="recipe_method">Recipe Method</label>
+                    <span class="helper-text">..toast the bread, add butter, chese and ham..etc</span>
                 </div>
             </div>
             <!--image url-->
             <div class="row">
                 <div class="input-field col s12">
-                    <i class="fas  fa-image prefix white-text text-darken-4"></i>
-                    <input id="image_url" name="image_url" type="text"
-                     class=" validate" required>
-                    <label for="image_url">Image Url eg https:www.</label>
+                    <i class="fas fa-images white-text prefix"></i>
+                    <input id="image_url" name="image_url" type="text" minlength="5" pattern="https://.*" class="validate"
+                        required />
+                    <label for="image_url">Add an image</label>
+                    <span class="helper-text">To add an image to your recipe, paste an image URL here. You must
+                        include 'https://'</span>
                 </div>
             </div>
             <!--submitt btn-->

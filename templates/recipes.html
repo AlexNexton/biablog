@@ -31,14 +31,14 @@
                 <strong>{{ recipes.category_name }}</strong> : {{ recipes.recipe_name }}
                 </div></div>
             
-            <div class="collapsible-body ">
-                <strong>{{ recipes.category_name }}</strong>
-                <p>Name: {{ recipes.recipe_name }}</p>
-                <p>Ingredients: {{ recipes.recipe_ingredients }}</p>
-                <p>Method: {{ recipes.recipe_method }}</p>
-                <p>Image: {{ recipes.image_url }}</p>
-                <p><em>by:{{ recipes.created_by }}</em></p>
-            </div>
+                <div class="collapsible-body ">
+                    <strong>{{ recipes.category_name }}</strong>
+                    <p>Name: {{ recipes.recipe_name }}</p>
+                    <p>Ingredients: {{ recipes.recipe_ingredients }}</p>
+                    <p>Method: {{ recipes.recipe_method }}</p>
+                    <img src="{{ recipes.image_url }}" class="recipe-img">
+                    <p><em>by:{{ recipes.created_by }}</em></p>
+                </div>
         </li>
         {% endfor %}
     </ul>
