@@ -1,9 +1,8 @@
 /*<!--This page and it's code was/were influenced by the 'Backend Development Mini Project' by Code Institue-->*/
-/*@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Kalam&family=Libre+Baskerville&display=swap');*/
+
 @import url('https://fonts.googleapis.com/css2?family=Reggae+One&family=Vollkorn+SC&display=swap');
 
-
-
+ 
 body{
    font-family: 'Vollkorn SC', serif; 
    background-image: linear-gradient(#f0ede5, #7c0999); 
@@ -14,6 +13,8 @@ body{
 .welcome-txt{
     font-size: 20px;
 }
+
+/*styling for background images*/
 
 .the-way{
     background-image: url("/static/css/img/homepage.jpg") ;
@@ -47,6 +48,21 @@ h2{
 .over-flow{
     overflow: hidden;
 }
+/* Id for nav-bar once logged in to help the user quickly identify the location */
+
+#add-recipe{
+    border: 100%;
+    background: rgb(243, 100, 5);
+    color: #fafafa;
+
+}
+#add-recipe:hover{
+    border: 100%;
+    background: rgb(204, 17, 195);
+    color: #fafafa;
+
+}
+/*syling for nav-bar links*/
 
 .nav-link:hover{
     border: 100%;
@@ -63,16 +79,17 @@ h2{
     background: rgb(204, 17, 195);
     color: #fafafa;
 }
-
+/* idea from Code insitute*/
 .text-shadow{
     text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
 }
 
-
+/*idea from Code institue*/
 .flashes h4 {
     line-height: 2;
 }
 
+/*Button Styling*/
 .btn, .btn-large, .btn-small{
         background-color: purple;
 }
@@ -80,6 +97,11 @@ h2{
         background-color: rgb(161, 150, 161);
 }
 
+.btn-small{
+    margin: 5px
+    
+}
+/*Card Styling*/
 .card{
     margin-top: 20%;
     
@@ -91,17 +113,13 @@ h2{
 .card .card-image .card-title {
     color: red;
 }
-
-.btn-small{
-    margin: 5px
-    
-}
-
+ 
+ /*editing the header to make it look more user friendly*/
 .collapsible-header .col strong{
     margin: 5px;
     line-height: 42px;
 }
-
+/*Title's inside the recipe.html page styling*/
 #title-name{
     color: green;
     font-size:40px ;
@@ -131,6 +149,7 @@ h2{
     height: 20%;
 }
 
+/*Delete button styling*/
 
 .delete-btn-modal{
     color: red;
@@ -142,7 +161,7 @@ h2{
 .input-field .helper-text{
     color: #fac600;
 }
-
+/*Footer styling*/
 .page-footer {
     background-color: #401e4b;
 }
