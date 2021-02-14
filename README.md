@@ -79,7 +79,7 @@ BiaBook is a simple recipe website where users can share their recipes and view 
 - As a site owner, I want to be able to add or remove categories.
 - As a site owner, I want my users to be able to sign up to the website.
 - As a site owner, I want my users to be able to connect with the owner/team via social media channels.
-- Testing information for User Stories can be found in a separate testing.md file.
+- Testing information for User Stories can be found in a separate [TESTING.md](TESTING.md)
 ---
 
 ---
