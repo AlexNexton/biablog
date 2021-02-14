@@ -409,7 +409,7 @@ MONGO_DBNAME | To be added by user
 
 ## Images used References:
  - **Important** : all other images are supplied/ have been supplied or will be supplied by testing users.
- - [Bibao Food Safari](https://www.bilbaofoodsafari.com/the-pintxo-pote/)
+ - [Bilbao Food Safari](https://www.bilbaofoodsafari.com/the-pintxo-pote/)
  - [Business2community](https://www.business2community.com/social-media/importance-profile-picture-career-01899604)
  
 
