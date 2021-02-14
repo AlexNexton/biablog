@@ -4,7 +4,7 @@
 
 ### [GitHub Repository](https://github.com/AlexNexton/biablog)
 
-![Responsive](../static/css/img/responsive.png)
+![Responsive](static/readmeImg/responsive.png)
 
 BiaBook (where 'bia' is the Irish word for food) is my Milestone 3 project.
 It is part of the Fullstack Software Development Course of [Code Institute](https://codeinstitute.net/).
