@@ -226,7 +226,7 @@ The Footer features:
 -   **Profile Page**
 
     - The Profile page currently allows users to upload an image but they are unable to save it. I would like to add this feature later.
-    - Also, I would like to make a profile page similar to one you might find on [facebook](www.facebook.com) where user could design it to their tast and like and/ favourite other user's recipes.
+    - Also, I would like to make a profile page similar to one you might find on [facebook](www.facebook.com) where the user could design it to their taste and 'like' and/or 'favourite' other user's recipes.
     - I would like to add a video platform where users could vlog their recipes and have others follow their content.
 
     
