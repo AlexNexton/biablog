@@ -24,7 +24,7 @@
                 <li><a href="{{ url_for('get_recipes') }}" class="nav-link">Recipes</a></li>
                 {% if session.user %}
                     <li><a href="{{ url_for('profile', username=session['user']) }}" class="nav-link">Profile</a></li>
-                    <li><a href="{{ url_for('add_recipes') }}" class="nav-link">Add Recipe</a></li>
+                    <li><a href="{{ url_for('add_recipes') }}" class="nav-link" id="add-recipe">Add Recipe</a></li>
                     {% if session.user|lower == 'admin'|lower %}
                         <li><a href="{{ url_for('get_categories') }}" class="nav-link">Manage Categories</a></li>
                     {% endif %}
