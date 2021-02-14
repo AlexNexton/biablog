@@ -114,7 +114,7 @@ BiaBook is a simple recipe website where users can share their recipes and view 
 #### Wireframes
 
 -  designed the site mock-ups using balsamiq wireframes. Each image/pdf shows a page and how the displays would change on different screen sizes such as mobile, tablet and desktop.
- - [Recipe](/wireframes/recipes.pdf)
+ - [Recipe(home page)](/wireframes/recipes.pdf)
  - [Register and Login](/wireframes/Register-login.pdf)
 
 ### Surface Plane
