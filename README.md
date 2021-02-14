@@ -113,15 +113,16 @@ BiaBook is a simple recipe website where users can share their recipes and view 
 ### Skeleton Plane
 #### Wireframes
 
--  designed the site mock-ups using balsamiq wireframes. Each image/pdf shows a page and how the displays would change on different screen sizes such as mobile, tablet and desktop.
- - [Recipe(home page)](/wireframes/recipes.pdf)
- - [Register and Login](/wireframes/Register-login.pdf)
- - [Add Recipe](/wireframes/add-recipe.pdf)
- - [Profile](/wireframes/profile.pdf)
+-  I designed the site mock-ups using balsamiq wireframes. 
+- Each image/pdf shows a page and how the displays would change on different screen sizes such as mobile, tablet and desktop.
+  - [Recipe(home page)](/wireframes/recipes.pdf)
+  - [Register and Login](/wireframes/Register-login.pdf)
+  - [Add Recipe](/wireframes/add-recipe.pdf)
+  - [Profile](/wireframes/profile.pdf)
 
 ### Surface Plane
 
-- limited fonts and colour scheme
+- limited fonts and a purple colour scheme
 
 #### Design
 
@@ -131,7 +132,7 @@ A standard layout is fully responsive on mobile devices and larger screens.
 
 I came up with the colour scheme myself. I wanted to experiment with an assortment of purples in contrast with orange, red, green and white.
 
-The colour used:
+The colour used: *note - some are in rgb format in the project*
 
  - #cc11c3
      - ![#cc11c3](https://placehold.it/15/cc11c3/000000?text=+)
@@ -159,9 +160,7 @@ The colour used:
 
 - [Vollkorn SC](https://fonts.google.com/specimen/Vollkorn+SC?selection.family=Reggae+One|Vollkorn+SC&sidebar.open=true&preview.text_type=custom) : Used throughout the entire site.
 
-All images, and recipes are the authors own unless provided by other users. Logos are also produced by the author using Affinity Design.
-
-- [Balsamiq Wireframe]()
+- [Balsamiq Wireframe](https://balsamiq.com/)
  
 ##### back to [top](#table-of-contents)
 
@@ -250,19 +249,16 @@ The Footer features:
 - [JavaScript](https://www.javascript.com/) - Used to help features in [Materialize](https://materializecss.com/).
 - [Materialize](https://materializecss.com/) - Used to aid responsive design and for componants such as modals.
 - [Gitpod](https://code.visualstudio.com/) - Code Editor used to create the site.
-- [GitHub](https://github.com/) - Used to host repos for the site.
-- [Imgur](https://imgur.com/) - Used to host images for the site.
+- [GitHub](https://github.com/) - Used to host repos for the site. 
 
 - [Chrome](https://developers.google.com/web/tools/chrome-devtools) - Used to test/ find a solution to a problem.
 - [W3C Markup Validation Service](https://validator.w3.org/https://jigsaw.w3.org/) - Used to test code for errors.
-- [Affinity Designer](https://affinity.serif.com/en-gb/) - Illustration software used to create logos and icons.
-
+ 
 - [Balsamiq](https://balsamiq.com/?) - Used to create wireframes.
 - [Tinypng](https://tinypng.com/) - Used to compress images.
 
 - [Randomkeygen](https://randomkeygen.com/) - Used to generate random keys.
-- [Kaffeine](https://kaffeine.herokuapp.com/) - Used to keep Heroku app from falling asleep.
-- [Uptime Robot](https://uptimerobot.com/) - Used to keep Heroku app from falling.
+ 
 
 ###  Back-end 
 
@@ -280,7 +276,7 @@ The Footer features:
  
 ### Version Control
 
-- [Git](https://git-scm.com/) - used for version control
+- [Git](https://git-scm.com/) - used for version control. Only a Master branch was used.
  
 ---
 
@@ -410,6 +406,12 @@ MONGO_DBNAME | To be added by user
 -  Google Fonts for font styles; https://fonts.google.com/
 
 -  Button icons sourced from [Fontawesome](https://fontawesome.com/)
+
+## Images used References:
+ - **Important** : all other images are supplied/ have been supplied or will be supplied by testing users.
+ - [Bibao Food Safari](https://www.bilbaofoodsafari.com/the-pintxo-pote/)
+ - [Business2community](https://www.business2community.com/social-media/importance-profile-picture-career-01899604)
+ 
 
  
 
