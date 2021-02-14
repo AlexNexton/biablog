@@ -13,6 +13,11 @@ body{
 .welcome-txt{
     font-size: 20px;
 }
+
+#card-search{
+    
+    color: red;
+}
 /*profile.html photo */
 .profile-photo img{
     width: 50%;
