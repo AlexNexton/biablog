@@ -253,9 +253,9 @@ The Footer features:
 
 - [Chrome](https://developers.google.com/web/tools/chrome-devtools) - Used to test/ find a solution to a problem.
 - [W3C Markup Validation Service](https://validator.w3.org/) - Used to test code for errors.
- 
+- [Extends Class](https://extendsclass.com/python-tester.html) -Used to test python code
+
 - [Balsamiq](https://balsamiq.com/?) - Used to create wireframes.
-- [Tinypng](https://tinypng.com/) - Used to compress images.
 
 - [Randomkeygen](https://randomkeygen.com/) - Used to generate random keys.
  

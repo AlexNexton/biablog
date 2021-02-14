@@ -74,6 +74,11 @@ The following **validation services** and **linter** were used to check the vali
         - Firefox
         - Edge
 
+## Code testin ##
+
+- Tested Python code
+![python](static/testingImg/python-test.png)
+
 ---
 ## User Stories Testing ##
 ---
