@@ -382,7 +382,7 @@ MONGO_DBNAME | To be added by user
 *Note: your MONGO_URI and SECRET_KEY must match the ones you entered in 'env.py' file*
 
 7. In Deploy, I clicked ‘Enable Automatic Deploys’ and deployed from the Master branch.
-8.	Follow this I then clicked ‘Deploy Branch’ and the app was deployed successfully at the URL [BiaFood](https://biablog.herokuapp.com/) which is *https://biablog.herokuapp.com/*
+8.	Follow this I then clicked ‘Deploy Branch’ and the app was deployed successfully at the URL [BiaBook](https://biablog.herokuapp.com/) which is *https://biablog.herokuapp.com/*
  
 ---
 
