@@ -64,11 +64,13 @@ BiaBook is a simple recipe website where users can share their recipes and view 
 
 ### User Stories
 
--  As a user, I would like to be able to search for recipes.
--  As a user, I would like to create a profile and upload a picture.  
--  As a user, I would like to view what recipes other users have created.
--  As a user, I would like to register in order to have my own account.
--  As a registered user, I would like to add, edit or delete my own recipes.
+-  As a **user**, I would like to be able to search for recipes.
+-  As a **user**, I would like to create a profile and upload a picture.  
+-  As a **user**, I would like to view what recipes other users have created.
+-  As a **user**, I would like to register in order to have my own account.
+-  As a **registered user**, I would like to add, edit or delete my own recipes.
+-  As a **user**, I want to be able to **contact** the website.
+-  As a **user**, I want to be able to access the site's if any **Social Media** platforms.
 
 
 ### Admin Stories
