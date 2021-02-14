@@ -123,9 +123,29 @@ A standard layout is fully responsive on mobile devices and larger screens.
 
 #### Color Scheme
 
-Colors are kept to a minimum in order to keep focus on the imagery of the recipes, chosen colousr are various shades of grey. Color scheme can be found on my Coolors profile: [Coolors]()
+I came up with the colour scheme myself. I wanted to experiment with an assortment of purples in contrast with orange, red, green and white.
 
-![Color Palette]()
+The colour used:
+
+ - #cc11c3
+     - ![#cc11c3](https://placehold.it/15/cc11c3/000000?text=+)
+ - #f36405
+     - ![#f36405](https://placehold.it/15/f36405/000000?text=+)
+ - #f86af8
+     - ![#f86af8](https://placehold.it/15/f86af8/000000?text=+)
+ - #a196a1
+     - ![#a196a1](https://placehold.it/15/a196a1/000000?text=+)
+ - #fac600 
+     - ![#fac600](https://placehold.it/15/fac600/000000?text=+)
+ - #401e4b 
+     - ![#401e4b](https://placehold.it/15/401e4b/000000?text=+)
+ - #3f1d40
+     - ![#3f1d40](https://placehold.it/15/#3f1d40/000000?text=+)
+ - #fc0000
+     - ![#fc0000](https://placehold.it/15/fc0000/000000?text=+)
+ - #008000
+     - ![#008000](https://placehold.it/15/008000/000000?text=+)
+
 
 #### Typography
 
