@@ -6,6 +6,24 @@ $(document).ready(function(){
     $('.modal').modal();
     $('select').formSelect();
 
+    $("#profileImage").click(function(e) {
+    $("#imageUpload").click();
+});
+//https://www.codegrepper.com/code-examples/javascript/html+input+file+upload+image+for+profile+picture
+//Code to upload a profile photo
+
+
+function fasterPreview( uploader ) {
+    if ( uploader.files && uploader.files[0] ){
+          $('#profileImage').attr('src', 
+             window.URL.createObjectURL(uploader.files[0]) );
+    }
+}
+
+$("#imageUpload").change(function(){
+    fasterPreview( this );
+});
+
     //Code supplied by Code Institute in the 'Backend Development Mini Project'
     validateMaterializeSelect();
     function validateMaterializeSelect() {

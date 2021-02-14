@@ -13,6 +13,13 @@ body{
 .welcome-txt{
     font-size: 20px;
 }
+/*profile.html photo */
+.profile-photo img{
+    width: 50%;
+    height: 50%;
+}
+
+
 
 /*styling for background images*/
 
