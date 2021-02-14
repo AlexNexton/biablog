@@ -37,13 +37,13 @@ body{
 .the-way-login{
 background-image: url("/static/css/img/wine-pour.jpg") ;
     background-size: cover;
-  height: 100vh;
+  height: fit-content;
 }
 
 .the-way-register{
     background-image: url("/static/css/img/register-img.jpg") ;
     background-size: cover;
-  height: 100vh;
+  height: fit-content;
 
 }
 
@@ -194,3 +194,20 @@ h2{
   
   font-size: 40px;
 }
+
+@media (max-width: 1024px){
+     
+.card-panel{
+    margin: 3.5rem;
+}
+
+ }
+
+@media (max-width: 768px){
+     
+.card-panel{
+    margin: 1.5rem;
+}
+
+ }
+
