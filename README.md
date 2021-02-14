@@ -252,7 +252,7 @@ The Footer features:
 - [GitHub](https://github.com/) - Used to host repos for the site. 
 
 - [Chrome](https://developers.google.com/web/tools/chrome-devtools) - Used to test/ find a solution to a problem.
-- [W3C Markup Validation Service](https://validator.w3.org/https://jigsaw.w3.org/) - Used to test code for errors.
+- [W3C Markup Validation Service](https://validator.w3.org/) - Used to test code for errors.
  
 - [Balsamiq](https://balsamiq.com/?) - Used to create wireframes.
 - [Tinypng](https://tinypng.com/) - Used to compress images.
