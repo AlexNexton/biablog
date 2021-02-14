@@ -8,7 +8,7 @@
                 <div class="input-field col s12">
                     <i class="fas fa-folder-open prefix white-text  text-darken-4"></i>
                     <select id="category_name" name="category_name" class="validate" required>
-                        <option value="" disabled selected>Choose Category</option>
+                        <option value="" disabled selected>Choose Category *</option>
                         {% for category in categories %}
                          <option value="{{category.category_name}}">{{category.category_name}}</option>
                         {% endfor %}
@@ -22,7 +22,7 @@
                     <i class="fas fa-bread-slice  prefix white-text  text-darken-4"></i>
                     <input id="recipe_name" name="recipe_name" type="text"
                      minlength="5" maxlength="50" class="validate" required>
-                    <label for="recipe_name">Recipe Name</label>
+                    <label for="recipe_name">Recipe Name *</label>
                     <span class="helper-text">Please give you recipe an awesome name!!</span>
                 </div>
             </div>
@@ -32,7 +32,7 @@
                     <i class="fas fa-egg prefix white-text  text-darken-4"></i>
                     <textarea id="recipe_ingredients" name="recipe_ingredients" minlength="5"
                      maxlength="200" class="materialize-textarea validate" required></textarea>
-                    <label for="recipe_ingredients">Ingredients</label>
+                    <label for="recipe_ingredients">Ingredients *</label>
                     <span class="helper-text">Please seperate each Ingredient with a comma</span>
                 </div>
             </div>
@@ -42,7 +42,7 @@
                     <i class="fas  fa-pencil-alt prefix white-text  text-darken-4"></i>
                     <input id="recipe_method" name="recipe_method" type="text"
                      class="validate" required>
-                    <label for="recipe_method">Recipe Method</label>
+                    <label for="recipe_method">Recipe Method *</label>
                     <span class="helper-text">..toast the bread, add butter, cheese and ham..etc</span>
                 </div>
             </div>
@@ -52,7 +52,7 @@
                     <i class="fas fa-images white-text prefix"></i>
                     <input id="image_url" name="image_url" type="text" minlength="5" pattern="https://.*" class="validate"
                         required />
-                    <label for="image_url">Add an image</label>
+                    <label for="image_url">Add an image *</label>
                     <span class="helper-text">To add an image to your recipe, paste an image URL here. You must
                         include 'https://'</span>
                 </div>
