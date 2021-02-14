@@ -140,6 +140,11 @@ The following **validation services** and **linter** were used to check the vali
   - I set up two media queries in the Style.css folder which solved the problem.
 - The code supplied by Code Institue for the input validation when adding a recipe kept turning red even after a selection had been selected.
  - I removed the css red colour in the jquery script.js file so that the bar would only turn green. A category must still be selected in order to add a recipe so the validation works.
+- The register button was still appearing one the user was signed in:
+![bug resgister](static/testingImg/session.png)
+ - I used an jinja if statement to reslove this bug.
+ ![bug resgister](static/testingImg/in-session.png)
+
 
 #### Unsolved Bugs ####
 
