@@ -197,24 +197,29 @@ The Footer features:
 
 
 ### Recipes
-
+![Recipe](static/readmeImg/recipe.png)
 - This page contains:
     - a view of recipes from all the users.
     - If signed in, you can edit or delete your recipe.
     - You can open each collapsible to view the recipe contents and it's image.
 
 ### Register
+![Register](static/readmeImg/register-img.png)
 
 - This page contains a form where users may register and be redirected to their profile. Below the form is a link to login.
 
 ### Login
-
+![Login](static/readmeImg/login-img.png)
 - This page contains a form where users may login and be redirected to their profile. Below the form is a link to register.
 
 ### Logout
 
 - Clicking 'Logout' ends a user session and redirects them to the 'Login' page.
 
+### Manage page
+![Manage](static/readmeImg/manage-img.png)
+
+- This page is only for the Administrator
 
 
 # Future Features to Implement
@@ -224,6 +229,7 @@ The Footer features:
     Each image added to the recipes comes from a http: link, in the future I would love to make it so the user would be able to upload an image to the database.
 
 -   **Profile Page**
+![Profile](static/readmeImg/profile-img.png)
 
     - The Profile page currently allows users to upload an image but they are unable to save it. I would like to add this feature later.
     - Also, I would like to make a profile page similar to one you might find on [facebook](www.facebook.com) where the user could design it to their taste and 'like' and/or 'favourite' other user's recipes.
