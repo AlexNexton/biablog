@@ -63,13 +63,13 @@ h2{
 /* Id for nav-bar once logged in to help the user quickly identify the location */
 
 #add-recipe{
-    border: 100%;
+    
     background: rgb(243, 100, 5);
     color: #fafafa;
 
 }
 #add-recipe:hover{
-    border: 100%;
+    
     background: rgb(204, 17, 195);
     color: #fafafa;
 
@@ -77,17 +77,17 @@ h2{
 /*syling for nav-bar links*/
 
 .nav-link:hover{
-    border: 100%;
+    
     background: rgb(204, 17, 195);
     color: #fafafa;
 }
 
 .brand-logo{
-   border: 100%;
+   
 }
 
 .brand-logo:hover{
-    border: 100%;
+    
     background: rgb(204, 17, 195);
     color: #fafafa;
 }
