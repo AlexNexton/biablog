@@ -24,8 +24,7 @@ It is part of the Fullstack Software Development Course of [Code Institute](http
 * [**_Skeleton Plane_**](#skeleton-plane)
 * [**_Surface Plane_**](#surface-plane)
     * [_Color Scheme_](#color-scheme)
-    * [_Typography_](#typography)
-    * [_Media_](#Media)
+    * [_Typography_](#typography) 
     * [_Wireframes_](#wireframes)
 </details>
 

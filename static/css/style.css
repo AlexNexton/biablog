@@ -103,7 +103,7 @@ h2{
 
 /*Button Styling*/
 .btn, .btn-large, .btn-small{
-        background-color: purple;
+        background-color: #f86af8;
 }
 .btn:hover, .btn-large:hover, .btn-small:hover{
         background-color: rgb(161, 150, 161);
