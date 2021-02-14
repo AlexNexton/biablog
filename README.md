@@ -412,9 +412,6 @@ MONGO_DBNAME | To be added by user
  - [Bilbao Food Safari](https://www.bilbaofoodsafari.com/the-pintxo-pote/)
  - [Business2community](https://www.business2community.com/social-media/importance-profile-picture-career-01899604)
  
-
- 
-
 ### Acknowledgements
 
  - Firstly, I would like to thank my friend John for believing I could get this project completed as it has personally been a difficult couple of months. 

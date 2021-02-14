@@ -7,8 +7,13 @@ from werkzeug.security import generate_password_hash, check_password_hash
 if os.path.exists("env.py"):
     import env
 
-"""The code here is from the 'Backend Development Mini Project' by Code Institue -
-changed in places to suit this project"""
+"""
+
+The code here is from the 
+'Backend Development Mini Project' by Code Institue -
+changed in places to suit this project
+
+"""
 
 app = Flask(__name__)
 
@@ -23,22 +28,22 @@ mongo = PyMongo(app)
 @app.route("/")
 @app.route("/get_recipes")
 def get_recipes():
+    """
+    Gets the recipes from MondoDB site
+    
+    """
     recipe = list(mongo.db.recipe.find())
     return render_template("recipes.html", recipe=recipe)
 
-
+#Return the recipe a user is searching for on the website
 @app.route("/search", methods=["GET", "POST"])
 def search():
     query = request.form.get("query")
     recipe = list(mongo.db.recipe.find({"$text": {"$search": query}}))
     return render_template("recipes.html", recipe=recipe)
-
-"""@app.route("/index")
-def index():
-     recipe =mongo.db.recipe.find()
-     return render_template("index.html", recipe=recipe)""" 
-
-
+ 
+ 
+#Function so a user can join the site
 @app.route("/register", methods=["GET", "POST"])
 def register():
     if request.method == "POST":
@@ -62,7 +67,7 @@ def register():
         return redirect(url_for("profile", username=session["user"]))
     return render_template("register.html")
 
-
+#Function so the user can login to the site
 @app.route("/login", methods=["GET", "POST"])
 def login():
     if request.method == "POST":
@@ -112,7 +117,7 @@ def logout():
     return redirect(url_for("login"))
 
 
-
+#Function to add incredients to the Mongodb database
 @app.route("/add_recipes", methods=["GET","POST"])
 def add_recipes():
     if request.method == "POST":
@@ -131,6 +136,7 @@ def add_recipes():
     categories = mongo.db.categories.find().sort("category_name", 1)
     return render_template("add_recipes.html", categories=categories)
 
+#Funtion so the user can edit a recipe
 @app.route("/edit_recipes/<recipes_id>", methods=["GET", "POST"])
 def edit_recipes(recipes_id):
     
@@ -152,17 +158,20 @@ def edit_recipes(recipes_id):
     return render_template("edit_recipes.html", recipes=recipes, categories=categories)
 
 
+#Funtion so the user can delete a recipe
 @app.route("/delete_recipes/<recipes_id>")
 def delete_recipes(recipes_id):
     mongo.db.recipe.remove({"_id": ObjectId(recipes_id)})
     flash("Recipe Successfully Deleted")
     return redirect(url_for("get_recipes"))
 
+#Funtion to import categories
 @app.route("/get_categories")
 def get_categories():
     categories = list(mongo.db.categories.find().sort("category_name", 1))
     return render_template("categories.html", categories=categories)
 
+#Function so the admin can add a category
 @app.route("/add_category", methods=["GET", "POST"])
 def add_category():
     if request.method == "POST":
@@ -175,7 +184,7 @@ def add_category():
 
     return render_template("add_category.html")
 
-
+#Funtion so the admin can edit a category
 @app.route("/edit_category/<category_id>", methods=["GET", "POST"])
 def edit_category(category_id):
     if request.method == "POST":
@@ -189,7 +198,7 @@ def edit_category(category_id):
     category = mongo.db.categories.find_one({"_id": ObjectId(category_id)})
     return render_template("edit_category.html", category=category)
 
-
+#Funtion so the admin can erase a category
 @app.route("/delete_category/<category_id>")
 def delete_category(category_id):
     mongo.db.categories.remove({"_id": ObjectId(category_id)})
