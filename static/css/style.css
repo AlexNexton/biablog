@@ -198,12 +198,21 @@ h2{
     margin: 3.5rem;
 }
 
+.card .card-title {
+   font-size: 18px;
+}
+
+
  }
 
 @media (max-width: 768px){
      
 .card-panel{
     margin: 1.5rem;
+}
+
+.card .card-title {
+   font-size: 18px;
 }
 
  }
