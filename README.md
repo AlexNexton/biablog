@@ -119,6 +119,7 @@ BiaBook is a simple recipe website where users can share their recipes and view 
   - [Register and Login](/wireframes/Register-login.pdf)
   - [Add Recipe](/wireframes/add-recipe.pdf)
   - [Profile](/wireframes/profile.pdf)
+  - [Manage Categories](/wireframes/manage.pdf) - for Admin only!
 
 ### Surface Plane
 
