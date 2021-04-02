@@ -168,7 +168,9 @@ def edit_recipes(recipes_id):
     return render_template("edit_recipes.html", recipes=recipes, categories=categories)
 
 
-#Funtion so the user can delete a recipe
+# Funtion so the user can delete a recipe
+
+
 @app.route("/delete_recipes/<recipes_id>")
 def delete_recipes(recipes_id):
     mongo.db.recipe.remove({"_id": ObjectId(recipes_id)})
@@ -194,7 +196,9 @@ def add_category():
 
     return render_template("add_category.html")
 
-#Funtion so the admin can edit a category
+# Funtion so the admin can edit a category
+
+
 @app.route("/edit_category/<category_id>", methods=["GET", "POST"])
 def edit_category(category_id):
     if request.method == "POST":
@@ -208,7 +212,9 @@ def edit_category(category_id):
     category = mongo.db.categories.find_one({"_id": ObjectId(category_id)})
     return render_template("edit_category.html", category=category)
 
-#Funtion so the admin can erase a category
+# Funtion so the admin can erase a category
+
+
 @app.route("/delete_category/<category_id>")
 def delete_category(category_id):
     mongo.db.categories.remove({"_id": ObjectId(category_id)})
@@ -221,5 +227,5 @@ def delete_category(category_id):
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port = int(os.environ.get("PORT")),
-            debug = False) #change to False upon project submission
+            debug = True) #change to False upon project submission
             
