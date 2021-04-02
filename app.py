@@ -1,4 +1,6 @@
 import os
+
+
 from flask import (Flask, flash, render_template,
  redirect, request, session, url_for)
 from flask_pymongo import PyMongo
@@ -35,7 +37,9 @@ def get_recipes():
     recipe = list(mongo.db.recipe.find())
     return render_template("recipes.html", recipe=recipe)
 
-#Return the recipe a user is searching for on the website
+# Return the recipe a user is searching for on the website
+
+
 @app.route("/search", methods=["GET", "POST"])
 def search():
     query = request.form.get("query")
@@ -43,7 +47,9 @@ def search():
     return render_template("recipes.html", recipe=recipe)
  
  
-#Function so a user can join the site
+# Function so a user can join the site
+
+
 @app.route("/register", methods=["GET", "POST"])
 def register():
     if request.method == "POST":
@@ -67,7 +73,9 @@ def register():
         return redirect(url_for("profile", username=session["user"]))
     return render_template("register.html")
 
-#Function so the user can login to the site
+# Function so the user can login to the site
+
+
 @app.route("/login", methods=["GET", "POST"])
 def login():
     if request.method == "POST":
@@ -117,7 +125,9 @@ def logout():
     return redirect(url_for("login"))
 
 
-#Function to add incredients to the Mongodb database
+# Function to add incredients to the Mongodb database
+
+
 @app.route("/add_recipes", methods=["GET","POST"])
 def add_recipes():
     if request.method == "POST":
@@ -211,5 +221,5 @@ def delete_category(category_id):
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port = int(os.environ.get("PORT")),
-            debug = False) #change to False upon project submission
+            debug = True) #change to False upon project submission
             

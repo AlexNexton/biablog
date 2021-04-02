@@ -66,7 +66,7 @@
                     <p><span class="title-name">Name:</span> {{ recipes.recipe_name }}</p>
                     <p><span class="title-name">Ingredients:</span> {{ recipes.recipe_ingredients }}</p>
                     <p><span class="title-name">Method:</span> {{ recipes.recipe_method }}</p>
-                    <img src="{{ recipes.image_url }}" class="recipe-img">
+                    <img src="{{ recipes.image_url }}" class="recipe-img" alt="image of {{ recipes.recipe_name }} ">
                     <p><em><span class="title-name">by:</span>{{ recipes.created_by }}</em></p>
                 </div>
         </li>
