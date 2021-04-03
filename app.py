@@ -5,13 +5,14 @@ from flask import (Flask, flash, render_template, redirect, request,
                    session, url_for)
 from flask_pymongo import PyMongo
 from bson.objectid import ObjectId
-from werkzeug.security import generate_password_hash, check_password_hash 
+from werkzeug.security import generate_password_hash, check_password_hash
 if os.path.exists("env.py"):
     import env
+    # error left here unchanged. video in the course states it's okay to do so
 
 """
 
-The code here is from the 
+The code here is from the
 'Backend Development Mini Project' by Code Institue -
 changed in places to suit this project
 
@@ -32,7 +33,7 @@ mongo = PyMongo(app)
 def get_recipes():
     """
     Gets the recipes from MondoDB site
-    
+
     """
     recipe = list(mongo.db.recipe.find())
     return render_template("recipes.html", recipe=recipe)
@@ -45,8 +46,8 @@ def search():
     query = request.form.get("query")
     recipe = list(mongo.db.recipe.find({"$text": {"$search": query}}))
     return render_template("recipes.html", recipe=recipe)
- 
- 
+
+
 # Function so a user can join the site
 
 
@@ -110,7 +111,7 @@ def profile(username):
     # grab the session user's username from db
     username = mongo.db.users.find_one(
         {"username": session["user"]})["username"]
-    
+
     if session["user"]:
         return render_template("profile.html", username=username)
 
@@ -151,7 +152,7 @@ def add_recipes():
 
 @app.route("/edit_recipes/<recipes_id>", methods=["GET", "POST"])
 def edit_recipes(recipes_id):
-    
+
     if request.method == "POST":
         submit = {
             "category_name": request.form.get("category_name"),
@@ -163,7 +164,7 @@ def edit_recipes(recipes_id):
         }
         mongo.db.recipe.update({"_id": ObjectId(recipes_id)}, submit)
         flash("Recipe Successfully Edited")
-        
+
     recipes = mongo.db.recipe.find_one({"_id": ObjectId(recipes_id)})
     categories = mongo.db.categories.find().sort("category_name", 1)
     return render_template("edit_recipes.html",
@@ -232,4 +233,3 @@ if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),
             debug=True)  # change to False upon project submission
-            
