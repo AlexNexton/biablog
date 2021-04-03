@@ -1,8 +1,8 @@
 import os
 
 
-from flask import (Flask, flash, render_template,
- redirect, request, session, url_for)
+from flask import (Flask, flash, render_template, redirect, request,
+                   session, url_for)
 from flask_pymongo import PyMongo
 from bson.objectid import ObjectId
 from werkzeug.security import generate_password_hash, check_password_hash 
@@ -85,13 +85,13 @@ def login():
 
         if existing_user:
             # ensure hashed password matches user input
-            if check_password_hash(
-                existing_user["password"], request.form.get("password")):
-                    session["user"] = request.form.get(
-                        "username").lower()
-                    flash("Welcome, {}".format(request.form.get("username")))
-                    return redirect(url_for(
-                        "profile", username=session["user"]))
+            if check_password_hash(existing_user["password"],
+                                   request.form.get("password")):
+                session["user"] = request.form.get(
+                    "username").lower()
+                flash("Welcome, {}".format(request.form.get("username")))
+                return redirect(url_for(
+                    "profile", username=session["user"]))
             else:
                 # invalid password match
                 flash("Incorrect Username and/or Password")
@@ -128,7 +128,7 @@ def logout():
 # Function to add incredients to the Mongodb database
 
 
-@app.route("/add_recipes", methods=["GET","POST"])
+@app.route("/add_recipes", methods=["GET", "POST"])
 def add_recipes():
     if request.method == "POST":
         recipe = {
@@ -146,7 +146,9 @@ def add_recipes():
     categories = mongo.db.categories.find().sort("category_name", 1)
     return render_template("add_recipes.html", categories=categories)
 
-#Funtion so the user can edit a recipe
+# Funtion so the user can edit a recipe
+
+
 @app.route("/edit_recipes/<recipes_id>", methods=["GET", "POST"])
 def edit_recipes(recipes_id):
     
@@ -159,13 +161,13 @@ def edit_recipes(recipes_id):
             "image_url": request.form.get("image_url"),
             "created_by": session["user"]
         }
-        mongo.db.recipe.update({"_id": ObjectId(recipes_id)},submit)
+        mongo.db.recipe.update({"_id": ObjectId(recipes_id)}, submit)
         flash("Recipe Successfully Edited")
         
-          
     recipes = mongo.db.recipe.find_one({"_id": ObjectId(recipes_id)})
     categories = mongo.db.categories.find().sort("category_name", 1)
-    return render_template("edit_recipes.html", recipes=recipes, categories=categories)
+    return render_template("edit_recipes.html",
+                           recipes=recipes, categories=categories)
 
 
 # Funtion so the user can delete a recipe
@@ -177,13 +179,17 @@ def delete_recipes(recipes_id):
     flash("Recipe Successfully Deleted")
     return redirect(url_for("get_recipes"))
 
-#Funtion to import categories
+# Funtion to import categories
+
+
 @app.route("/get_categories")
 def get_categories():
     categories = list(mongo.db.categories.find().sort("category_name", 1))
     return render_template("categories.html", categories=categories)
 
-#Function so the admin can add a category
+# Function so the admin can add a category
+
+
 @app.route("/add_category", methods=["GET", "POST"])
 def add_category():
     if request.method == "POST":
@@ -222,10 +228,8 @@ def delete_category(category_id):
     return redirect(url_for("get_categories"))
 
 
-
-
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
-            port = int(os.environ.get("PORT")),
-            debug = True) #change to False upon project submission
+            port=int(os.environ.get("PORT")),
+            debug=True)  # change to False upon project submission
             
